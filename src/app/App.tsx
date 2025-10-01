@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, Outlet, useNavigate } from "react-router";
+import { Link, NavLink, Outlet, useNavigate } from "react-router";
 
 function App() {
     const navigate = useNavigate()
@@ -7,8 +7,8 @@ function App() {
     return (
         <div className="app">
             <div className="links">
-                <Link to="/">Home</Link>
-                <Link to="about">About</Link>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="about" end>About</NavLink>
 
                 <button onClick={() => navigate('/')}>Home</button>
                 <button onClick={() => navigate('about')}>About</button>

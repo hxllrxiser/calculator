@@ -12,8 +12,9 @@ export function About() {
         <>
             <h2>About Page</h2>
 
-            <Form encType="multipart/form-data">
-                <input placeholder="Email" defaultValue="test@gmail.com"></input>
+            <Form method="post">
+                <input name="email" placeholder="Email" defaultValue="test@gmail.com"></input>
+                <input name="name" placeholder="Name"></input>
                 <button type="submit">Submit</button>
             </Form>
         </>
